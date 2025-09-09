@@ -13,6 +13,8 @@ import { AlertTriangle, Plus, Search, Download, Trash2, Edit, RefreshCw } from "
 import { useToast } from "@/hooks/use-toast"
 import { dataService, type Product, formatCurrency } from "@/services/data-service"
 
+export const dynamic = "force-dynamic"
+
 export default function ProductsPage() {
   const router = useRouter()
   const { user } = useAuth()

@@ -67,6 +67,8 @@ interface Sale {
 type SortField = "name" | "price" | "quantity"
 type SortDirection = "asc" | "desc"
 
+export const dynamic = "force-dynamic"
+
 export default function EmployeeSalesPage() {
   const router = useRouter()
   const { toast } = useToast()

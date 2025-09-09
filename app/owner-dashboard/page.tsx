@@ -10,6 +10,8 @@ import { Package, DollarSign, AlertTriangle, TrendingUp, ShoppingCart, BarChart3
 import Link from "next/link"
 import { dataService, formatCurrency } from "@/services/data-service"
 
+export const dynamic = "force-dynamic"
+
 export default function OwnerDashboard() {
   const { user } = useAuth()
   const [stats, setStats] = useState({

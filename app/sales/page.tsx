@@ -34,6 +34,8 @@ interface Sale {
   total_price: number
 }
 
+export const dynamic = "force-dynamic"
+
 export default function SalesPage() {
   const { toast } = useToast()
   const [sales, setSales] = useState<Sale[]>([])
